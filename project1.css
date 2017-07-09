@@ -8,7 +8,7 @@ a {
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px; 
 }
 
@@ -90,7 +90,6 @@ body {
 	width: 100%;
 }
 
-
 .banner {
 	background-image: url(./img/banner.jpg);
 	background-position: center;
@@ -104,11 +103,9 @@ body {
 
 }
 
-.header__container {
-    max-width: 1100px;
-    margin: 0 auto;
+.header {
     width: 100%;
-    padding: 40px 0;
+    padding: 40px 20px;
     border-bottom: 1px gray solid;
 }
 
@@ -129,17 +126,17 @@ body {
 	float: right;
 }
 
-.header__nav li{
+.header__nav-item{
     padding-right: 20px;
     display: inline-block;
     vertical-align: middle;
 }
 
-.header__nav li:last-child {
+.header__nav-item:last-child {
 	padding-right: 0;
 }
 
-.header__nav a {
+.header__nav-link {
 	color: gray;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -148,6 +145,81 @@ body {
 
 }
 
-.header__nav a:hover {
+.header__nav-link:hover {
 	color: white;
+}
+
+.container {
+	padding: 0 15px;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.banner__text {
+	padding-top: 25%;
+	text-align: center;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.banner__text-title {
+	font-size: 60px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin:0;
+}
+
+.banner__text-passage {
+	font-size: 22px;
+	color: white;
+	padding: 0 5%;
+	margin: 0 0 100px 0;
+}
+
+.banner__btn {
+	border: 1px #e84545 solid;
+	display: inline-block;
+	padding: 15px 40px;
+	background-color: #e84545;
+	text-transform: uppercase;
+	border-radius: 2px;
+
+}
+
+.banner__btn:hover {
+	background-color: rgba(255, 25, 25, 0.77);
+	border: 1px rgba(255, 25, 25, 0.77) solid;
+	transition: 0.3s;
+}
+
+.banner__link {
+	color: white;
+}
+
+#features {
+	padding: 100px 0;
+	width: 100%;
+}
+
+.features_text-center {
+	text-align: center;
+}
+
+.features__items {
+	display: inline-block;
+	text-align: center;
+}
+.features__items-icon {
+	font-size: 60px;
+}
+
+.features__items-contant h5 {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.features__items-contant p {
+	color: gray;
+	font-size: 17px;
 }
